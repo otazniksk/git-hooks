@@ -1,0 +1,7 @@
+{
+  "name": "otazniksk/git-hooks",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {"Hooks\\": "Hooks/"}
+  }
+}

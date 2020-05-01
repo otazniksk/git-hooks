@@ -1,0 +1,15 @@
+#!/usr/bin/php
+<?php
+
+/**
+ * .git/hooks/pre-commit.
+ * https://mlocati.github.io/php-cs-fixer-configurator/#version:2.16.3
+ * @author Michal Škop <programatorsk@gmail.com>
+ */
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Hooks\PreCommit;
+
+$preCommit = new PreCommit(__DIR__);
+$preCommit->proccess();
