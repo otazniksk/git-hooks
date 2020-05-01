@@ -1,6 +1,6 @@
 ## AUTO FORMATING PHP SCRIPTS BEFORE COMMIT
-This pre-commit hook, formating php.cs-fixers all php files before commit to git.
-Formating rules is in setting file [.php_cs]
+This pre-commit hook, formating php-cs-fixers all php files before commit to git.
+Formating rules is in setting file [.php_cs](https://github.com/otazniksk/git-hooks/blob/master/.php_cs)
 
 ## Useful Git Hooks scripts
 
@@ -21,7 +21,7 @@ composer install
 ```
 
 # Create symlink
-##Vytvorenie symlinku pre OS Windows
+###Create symlink for OS Windows
 
 
 Suppose the whole path to the file for our git-hooks is this:
