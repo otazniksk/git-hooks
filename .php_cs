@@ -37,6 +37,10 @@ $rules = [
     'single_line_after_imports' => true,
     'return_type_declaration' => true,
     'trailing_comma_in_multiline_array' => true,
+    'binary_operator_spaces' => array(
+        'align_double_arrow' => false,
+        'align_equals' => false,
+    ),
 ];
 
 $finder = PhpCsFixer\Finder::create()
