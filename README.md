@@ -43,5 +43,32 @@ rmdir /s "C:\wamp64\www\your_project\.git\hooks"
 MKLINK /D C:\wamp64\www\your_project\.git\hooks C:\wamp64\www\_helpers\git-hooks
 ```
 
+
+###Create symlink for Linux
+
+Suppose the whole path to the file for our git-hooks is this:
+```bash
+/var/www/_helpers/git-hooks
+```
+Change permission
+```bash
+sudo chmod +x /var/www/your_project/.git/hooks/pre-commit
+```
+Suppose the whole path to **your_project** and git hooks is this:
+```bash
+/var/www/your_project/.git/hooks
+```
+You must delete the entire hooks directory before creating a symlink
+```bash
+sudo rm -rf /var/www/your_project/.git/hooks
+```
+
+#### Creating a symlink so that our git-hooks use our .git in the project
+**ATTENTATION!!** only for LINUX
+```bash
+cd /var/www/_helpers/git-hooks
+sudo ln -s /var/www/your_project/.git/hooks
+
+```
 To apply in PhpStorm, you need to restart PhpStorm
 
